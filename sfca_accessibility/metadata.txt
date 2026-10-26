@@ -1,0 +1,22 @@
+[general]
+name=GP Accessibility (2SFCA)
+qgisMinimumVersion=4.0
+qgisMaximumVersion=4.99
+description=Primary-care accessibility with the two-step floating catchment area (2SFCA) method on road-network travel time.
+version=1.4.0
+author=Rotich
+email=your.email@example.com
+about=Computes a spatial accessibility index for GP (primary care) supply points against population demand points (centroids of electoral divisions or any polygons) using the two-step floating catchment area method. Catchments are defined by road-network travel time (default 15 minutes) for driving, cycling or walking. Accepts GP locations as CSV / Shapefile / GeoJSON, population polygons as Shapefile / GeoJSON, and a roads line layer. Produces a styled choropleth layer, a GP supply layer with provider-to-population ratios, and an optional A4 print layout (PDF). Includes an independent regression tool relating accessibility to population density, rurality and deprivation. Built for QGIS 4 (Qt6 / PyQt6).
+tracker=https://github.com/YOUR-USER/sfca-gp-accessibility/issues
+repository=https://github.com/YOUR-USER/sfca-gp-accessibility
+tags=accessibility,healthcare,2SFCA,catchment,network,gp,primary care,spatial analysis
+homepage=https://github.com/YOUR-USER/sfca-gp-accessibility
+category=Analysis
+icon=icon.svg
+experimental=True
+deprecated=False
+changelog=1.4.0 - regression: side-by-side HC3 summary table (std. betas, VIF, R², heteroscedasticity test) with CSV export; Local Moran's I (LISA) hot/cold spots
+    1.3.0 - regression: LM tests, spatial lag, spatial error and GWR
+    1.2.0 - statistics tables (summary, classes, benchmark bands, GPs reachable, time to nearest GP, by-group, providers) with export
+    1.1.0 - provider capacity field selector with validation; independent regression tool (density, rurality, deprivation)
+    1.0.0 - first release for QGIS 4.0

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.gpkg-wal
+*.gpkg-shm
+dist/
+.venv/
+.DS_Store
